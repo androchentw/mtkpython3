@@ -15,3 +15,14 @@ pip3.6 install --trusted-host=pypi.org --trusted-host=files.pythonhosted.org --t
 ## 今日Demo
 
 Repl位址: [請點我](https://repl.it/@Elwing/0827day)
+
+## args kwargs
+
+```python
+def test(*args, **kwargs):
+    print(args)
+    print(kwargs)
+    print(kwargs["mul"] * sum(args) / kwargs["div"])
+
+test(1, 2, 3, 4, mul=3, div=2)
+```
